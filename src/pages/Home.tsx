@@ -10,11 +10,11 @@ function Home() {
       try {
         const { data, error } = await client.auth.getUser();
         if (error || !data.user) {
-          navigate("https://mayanquercode.github.io/warehouse-web-react/login");
+          navigate("/login");
         }
       } catch (err) {
         console.error("Error checking user:", err);
-        navigate("https://mayanquercode.github.io/warehouse-web-react/login");
+        navigate("/login");
       }
     };
 
@@ -24,7 +24,7 @@ function Home() {
   const handleSignOut = async () => {
     try {
       await client.auth.signOut();
-      navigate("https://mayanquercode.github.io/warehouse-web-react/login");
+      navigate("/login");
     } catch (error) {
       console.error("Error signing out:", error);
     }
