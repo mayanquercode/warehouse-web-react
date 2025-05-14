@@ -1,7 +1,6 @@
 {
   "name": "warehouse-web-react",
   "private": true,
-  "homepage": "http://mayanquercode.github.io/warehouse-web-react",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
