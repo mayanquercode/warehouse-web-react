@@ -12,7 +12,7 @@ function Login() {
     const checkUser = async () => {
       const { data } = await client.auth.getUser();
       if (data.user) {
-        navigate("/");
+        navigate("https://mayanquercode.github.io/warehouse-web-react/");
       }
     };
 
